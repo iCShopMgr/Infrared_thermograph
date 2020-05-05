@@ -29,12 +29,12 @@ struct config_type {
 void Init_IO_Pins() {
   delay(10);
   //ON ACD
-  ACSR &= ~_BV(ACIE);
-  ACSR &= ~_BV(ACD);
-  ACSR |= _BV(ACIE);
+  //ACSR &= ~_BV(ACIE);
+  //ACSR &= ~_BV(ACD);
+  //ACSR |= _BV(ACIE);
   //ON ADC
-  ADCSRA |= _BV(ADEN);
-  ADCSRA |= _BV(ADIF);
+  //ADCSRA |= _BV(ADEN);
+  //ADCSRA |= _BV(ADIF);
 
   // PWREN (Set 0 to turn on the 3V3-A)
   pinMode(8, OUTPUT);
